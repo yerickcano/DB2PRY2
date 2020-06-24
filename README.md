@@ -8,7 +8,7 @@ Actualmente está conformado por 3 sucursales, cada una de ellas son independien
 # Preparación del entorno
 Antes de iniciar el desarrollo es necesario conocer las herramientas y tecnologías necesarias para el desarrollo completo del proyecto. Y esto significa preparar un entorno donde pueda ser construida la solución. Dados los requisitos que deben ser cumplidos para logar el objetivo, se identificó software y conocimiento necesario para iniciar el proceso y desarrollar la aplicación desde scratch en nuestro ordenador.
 
-## Requisitos del sistema
+### Requisitos del sistema
 
   *   Docker containers.
   *   SQL Server y Management Studio.
@@ -18,7 +18,7 @@ Antes de iniciar el desarrollo es necesario conocer las herramientas y tecnolog�
   *   Distribución WSL de kernel de linux instalada en el equipo. (Solo si usa el GUI Docker Toolbox)
   *   Angular 9.*
 
-## Conocimiento necesario
+### Conocimiento necesario
 
   *   Bases de datos distribuidas.
   *   Protocolos de conectividad TCP/IP.
@@ -29,6 +29,7 @@ Antes de iniciar el desarrollo es necesario conocer las herramientas y tecnolog�
 # Contenedores.
 Descripcion de como fue realizada la aproximacion
 ## Entradas
+### Entrada 1[DD/MM/AA]
 
 # Decisiones de diseño.
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
