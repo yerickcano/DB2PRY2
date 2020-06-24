@@ -1,4 +1,4 @@
-# DB2PRY2
+# Introducción
 Documentación de proceso completo.
 # Preparación del entorno
 ## Primer paso
