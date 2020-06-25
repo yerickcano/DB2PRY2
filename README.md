@@ -29,15 +29,17 @@ Antes de iniciar el desarrollo es necesario conocer las herramientas y tecnolog�
   *   Apertura de reglas para I/O mediante puertos en el firewall y router.
 
 ### 2.3 Contenedores.
-En esta sección se ecplica como preparar los contenedores. La preparación de los contenedores no requiere demasiado esfuerzo si se cumple con los requisitos del sistema, el primer paso es determinar la imagen de contenedor que va a ser utilizada, y como en este proyecto se utiliza sql server 2017 o superior se optó por una imagen preconstruida por microsoft.
+En esta sección se explica como preparar los contenedores. La preparación de los contenedores no requiere demasiado esfuerzo si se cumple con los requisitos del sistema, el primer paso es determinar la imagen de contenedor que va a ser utilizada, y como en este proyecto se utiliza sql server 2017 o superior se optó por una imagen preconstruida por microsoft.
 
 **Paso 1. Instalar Docker**
+
 El primer paso es instalar docker desktop. Esta aplicación puede ser descargada de la página principal
 [Descargar Docker Desktop](https://www.docker.com/products/docker-desktop).
 
 Una vez instalado y terminado el tutorial brindado por la aplicación, el cuál es escencial para comprender el funcionamiento básico de docker containers, se puede proceder a construir los contenedores con la imagen de sql server 2017.
 
 **Paso 2. Montar la imagen de Sql Server**
+
 Terminado el paso anterior, debemos abrir la consola de comando ```cmd```, presionando ```Inicio + R``` y en la ventana de Ejecutar se escribe 'cmd' y presiona ```Enter```.
 
 Cuando la línea de comando inicie ingresamos lo siguiente:
@@ -57,6 +59,26 @@ _**Información detallada de la imagen utilizada para el contenedor SQL SERVER d
 [Imagen de Microsoft Sql Server Docker](https://hub.docker.com/_/microsoft-mssql-server).
 
 ### 2.4 Management Studio
+Esta sección pretende explicar como conectar las bases de datos creadas con contendores a una base de datos principal a través de SSMS (Sql Server Management Studio), y cómo exponer nuestra base de datos para que pueda ser consumida por cualquier usuario. La exposición de los datos sin embargo, **NO** es mediante un WEB API o similiares, es para uso exclusivo de nuestra aplicación. Es importante que todas las bases estén conectadas y se comuniquen por un medio común, así, se va a utilizar SSMS para lograr este propósito.
+
+**Paso 1. Preparar las credenciales**
+
+Inicia Management Studio, debemos preparar credenciales para ingresar a nuestra base de datos física mediante la autenticación de sql server (Si ya cuentas con un login tipo 'sa' puedes pasar al siguiente paso). Después de loggear mediante autenticación de windows realiza lo siguiente.
+
+1.  Posicionar el puntero sobre el explorador de objetos.
+2.  Desplegar la carpeta _Seguridad_.
+3.  Click derecho sobre la carpeta _Logins_.
+4.  Selecciona _Nuevo login..._ en la ventana emergente.
+5.  Rellena los campos con las credenciales: ```usuarioExterno``` como nombre de usuario y ```sql1234``` como contraseña.
+6.  Desmarca la casilla de _política de contraseña_.
+7.  Selecciona la _Base de datos por defecto_ con la base de datos que prefieras como principal.
+8.  Selecciona _Mapeo de usuarios_ en el menú de navegación izquierdo.
+9.  Marca las bases a las que quieres el login tenga acceso en la sección _Mapeo de usuarios_.
+10. Marca los roles que va a tener esta credencial sobre las bases seleccionadas en el paso anterior.
+11. Selecciona _Roles de servidor_ en el menú de navegación izquierdo.
+12. Asegurate de que la casilla de _sysadmin_ está seleccionada.
+13. Dirigete a la la sección de _Estado_ en el mapa de navegación izquierdo y haz click.
+14. Asegurate que el login esté habilitado.
 
 # 4 Decisiones de diseño.
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
