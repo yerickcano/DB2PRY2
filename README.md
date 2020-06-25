@@ -53,7 +53,7 @@ y presiona ```Enter```. La imagen se va a descargar y será construida automáti
 
 El resultado de realizar estos pasos debe presentarse de la siguiente manera:
 
-![Imagen 1: Comandos de doker](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/docker-commands.PNG)
+![Imagen 1: Comandos de docker](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/docker-commands.PNG)
 
 _**Información detallada de la imagen utilizada para el contenedor SQL SERVER de este proyecto:**_
 [Imagen de Microsoft Sql Server Docker](https://hub.docker.com/_/microsoft-mssql-server).
@@ -72,13 +72,24 @@ Inicia Management Studio, debemos preparar credenciales para ingresar a nuestra 
 5.  Rellena los campos con las credenciales: ```usuarioExterno``` como nombre de usuario y ```sql1234``` como contraseña.
 6.  Desmarca la casilla de _política de contraseña_.
 7.  Selecciona la _Base de datos por defecto_ con la base de datos que prefieras como principal.
+
+![Imagen 2: Configuración general](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/general-config.PNG)
+
 8.  Selecciona _Mapeo de usuarios_ en el menú de navegación izquierdo.
 9.  Marca las bases a las que quieres el login tenga acceso en la sección _Mapeo de usuarios_.
 10. Marca los roles que va a tener esta credencial sobre las bases seleccionadas en el paso anterior.
+
+![Imagen 3: Mapeo de usuarios](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/user-mapping-config.PNG)
+
 11. Selecciona _Roles de servidor_ en el menú de navegación izquierdo.
 12. Asegurate de que la casilla de _sysadmin_ está seleccionada.
+
+![Imagen 4: Roles en servidor](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/server-roles-config.PNG)
+
 13. Dirigete a la la sección de _Estado_ en el mapa de navegación izquierdo y haz click.
 14. Asegurate que el login esté habilitado.
+
+![Imagen 5: Estado del login](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/status-config.PNG)
 
 # 4 Decisiones de diseño.
 Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
