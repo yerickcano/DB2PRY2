@@ -59,7 +59,7 @@ _**Información detallada de la imagen utilizada para el contenedor SQL SERVER d
 [Imagen de Microsoft Sql Server Docker](https://hub.docker.com/_/microsoft-mssql-server).
 
 ### 2.4 Management Studio
-Esta sección pretende explicar como conectar las bases de datos creadas con contendores a una base de datos principal a través de SSMS (Sql Server Management Studio), y cómo exponer nuestra base de datos para que pueda ser consumida por cualquier usuario. La exposición de los datos sin embargo, **NO** es mediante un WEB API o similiares, es para uso exclusivo de nuestra aplicación. Es importante que todas las bases estén conectadas y se comuniquen por un medio común, así, se va a utilizar SSMS para lograr este propósito.
+Esta sección pretende explicar como conectar las bases de datos creadas con contendores a una base de datos principal a través de SSMS (Sql Server Management Studio), y cómo exponer nuestra base de datos para que pueda ser consumida por cualquier usuario. La exposición de los datos sin embargo, **NO** es mediante un WEB API o similiares, es para uso exclusivo de nuestra aplicación. Es importante que todas las bases estén conectadas y se comuniquen por un medio común, así, se va a utilizar SSMS para lograr este propósito. Antes de realizar cualquiera de los pasos siguientes debe tener instalado sql server 2017 o superior y sql server Management Studio.
 
 **Paso 1. Preparar las credenciales**
 
@@ -71,7 +71,7 @@ Inicia Management Studio, debemos preparar credenciales para ingresar a nuestra 
 4.  Selecciona _Nuevo login..._ en la ventana emergente.
 5.  Rellena los campos con las credenciales: ```usuarioExterno``` como nombre de usuario y ```sql1234``` como contraseña.
 6.  Desmarca la casilla de _política de contraseña_.
-7.  Selecciona la _Base de datos por defecto_ con la base de datos que prefieras como principal.
+7.  Selecciona la _Base de datos por defecto_ con la base de datos que prefieras como principal. En mi caso se llama PRY2.
 
 ![Imagen 2: Configuración general](https://raw.githubusercontent.com/yerickcano/Empresa-Multinacional/master/Assets/general-config.PNG)
 
