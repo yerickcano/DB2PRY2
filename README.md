@@ -52,7 +52,7 @@ y presiona ```Enter```. La imagen se va a descargar y construida autmáticamente
 
 El resultado de realizar estos pasos debe presentarse de la siguiente manera:
 
-
+![_Imagen 1: Comandos de doker_](https://github.com/yerickcano/Empresa-Multinacional/blob/master/Assets/docker-commands.PNG)
 
 _**Información detallada de la imagen utilizada para el contenedor SQL SERVER de este proyecto:**_
 [Imagen de Microsoft Sql Server Docker](https://hub.docker.com/_/microsoft-mssql-server).
