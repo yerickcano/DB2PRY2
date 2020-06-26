@@ -44,7 +44,12 @@ Terminado el paso anterior, debemos abrir la consola de comando ```cmd```, presi
 
 Cuando la línea de comando inicie ingresamos lo siguiente:
 ```
-docker run --name Particion1 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Particion1" -e "MSSQL_PID=Express" -p 1434:1434 -d mcr.microsoft.com/mssql/server:2017-latest-ubuntu-latest
+docker pull mcr.microsoft.com/mssql/server:2017-latest
+```
+Esto descarga la imagen del contenedor en nuestro ordenador. Seguido ingresa el siguiente comando:
+
+```
+docker run --name Particion1 -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Particion1" -p 1433:1433 -d mcr.microsoft.com/mssql/server:2017-latest
 ```
 y presiona ```Enter```. La imagen se va a descargar y será construida automáticamente.
 >Recuerda que para crear los otros contenedores debe repetir el _Paso 2_ y cambiar el nombre de Particion1 a Particion2 o 3, al igual que la contraseña.
